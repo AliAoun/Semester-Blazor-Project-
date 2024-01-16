@@ -1,0 +1,55 @@
+﻿@page "/"
+@inject NavigationManager NV;
+
+<PageTitle>NeuroPulse</PageTitle>
+
+<link rel="stylesheet" href="/css/HomeNavigationStyle.css" type="text/css">
+<link rel="stylesheet" href="/css/HomeStyle.css" type="text/css">
+
+<div class="introImg">
+    <video autoplay muted loop class="banner-video">
+        <source src="/images/herovideo1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+<div class="titleHeading">
+    <h1>NeuroPulse</h1>
+</div>
+<div class="buttonDiv">
+    <AuthorizeView>
+        <Authorized>
+            <button type="button">LEARN MORE</button>
+        </Authorized>
+        <NotAuthorized>
+            <button type="button" @onclick="@GoToAbout">LEARN MORE</button>
+        </NotAuthorized>
+    </AuthorizeView>
+    <button type="button" id="exploreBtn" @onclick="@GoToShop">EXPLORE</button>
+</div>
+<div class="sliderTitle">
+    <h1>WHAT'S TRENDING</h1>
+</div>
+<div class="sliderBody">
+    <img src="/images/slider-image3.png" class="SlideIMG" alt="SlidingImage">
+    <img src="/images/slider-image2.png" class="SlideIMG" alt="SlidingImage">
+    <img src="/images/slider-image1.png" class="SlideIMG" alt="SlidingImage">
+    <button class="LEFT-B" onclick="nextIMG(-1)">&#10094;</button>
+    <button class="RIGHT-B" onclick="nextIMG(1)">&#10095;</button>
+</div>
+<div class="footerBlock">
+    <a href="https://www.facebook.com" target="blank"><img src="/images/FB-icon.png" /></a>
+    <a href="https://www.twitter.com" target="blank"><img src="/images/TW-icon.png" /></a>
+    <a href="https://www.instagram.com" target="blank"><img src="/images/IG-icon.png" /></a>
+</div>
+@code{
+    private void GoToShop()
+    {
+        NV.NavigateTo("/ShopNow");
+    }
+    private void GoToAbout()
+    {
+        NV.NavigateTo("/AboutUs");
+    }
+}

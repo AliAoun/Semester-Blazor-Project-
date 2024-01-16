@@ -1,0 +1,29 @@
+﻿@page "/AboutUs"
+@using Project.Components
+@inject NavigationManager NavigationManager
+
+
+<PageTitle>About Us</PageTitle>
+
+<link rel="stylesheet" href="/css/PageNavigation.css" type="text/css">
+<link rel="stylesheet" href="/css/AboutUsStyle.css" type="text/css">
+
+<div class="AboutUsOverlay">
+    <h1>ABOUT US</h1>
+    <p>
+        NeuroPulse is a premier online destination for cutting-edge neurotechnology products and the latest developments in brain-computer interfaces. From delivering top-tier tech products to offering round-the-clock customer support, NeuroPulse encompasses the entire spectrum of innovative neural technologies. Stay informed with daily updates on breakthroughs and product releases in the neurotech space.
+    </p>
+    <p>
+        We assure our customers an unparalleled quality that stands out in the market. Additionally, all NeuroPulse products are backed by a comprehensive one-year warranty, accessible for claims worldwide.
+    </p>
+    <button type="button" id="backHomeBtn" @onclick="@NavigateToHome">BACK TO HOME</button>
+</div>
+
+@code {
+    void NavigateToHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+} 
+
+<Footer />
