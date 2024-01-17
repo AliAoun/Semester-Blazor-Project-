@@ -1,5 +1,95 @@
-﻿<div class="footerBlock">
-    <a href="https://www.facebook.com" target="blank"><img src="/images/FB-icon.png"/></a>
-    <a href="https://www.twitter.com" target="blank"><img src="/images/TW-icon.png"/></a>
-    <a href="https://www.instagram.com" target="blank"><img src="/images/IG-icon.png"/></a>
-</div>
+﻿<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-family: abel;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        height: 150px; /* Adjust the height as needed */
+        width: 100%;
+        max-width: 100%;
+        margin-top: auto; /* Align at the bottom of the content */
+
+    }
+
+    .footer-section {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section {
+        flex: 1;
+        padding: 0 10px;
+    }
+
+    h2 {
+        color: #ffc107;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 2px;
+    }
+
+    .social-icons img {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .logo img {
+            width: 100px;
+        }
+</style>
+
+
+
+<footer>
+    <div class="footer-section">
+        <div class="section">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>Email: info@nuropulse.com</li>
+                <li>Location: Sialkot, Pakistan</li>
+                <li>Phone: +123 456 789</li>
+            </ul>
+            <div class="social-icons">
+                <img src="/images/FB-icon.png" alt="Facebook">
+                <img src="/images/TW-icon.png" alt="Twitter">
+                <img src="/images/IG-icon.png" alt="Instagram">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="@("/")">HOME</a></li>
+                <li><a href="@("/ShopNow")">SHOP</a></li>
+                <li><a href="@("/AboutUs")">ABOUT</a></li>
+                <li><a href="@("/ContactUs")">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="logo">
+                <img src="/images/NeuroAI logo (2).png" alt="Company Logo">
+            </div>
+            <p>NeuroPulse pioneers in cutting-edge EEG headsets, seamlessly blending innovation and neuroscience. Revolutionizing the future with mind-enhancing technology for a smarter tomorrow.</p>
+        </div>
+    </div>
+</footer>

@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inject NavigationManager NV;
+@using Project.Components;
 
 <PageTitle>NeuroPulse</PageTitle>
 
@@ -29,7 +30,7 @@
     <button type="button" id="exploreBtn" @onclick="@GoToShop">EXPLORE</button>
 </div>
 <div class="sliderTitle">
-    <h1>WHAT'S TRENDING</h1>
+    <h1>Revolutionizing Tomorrow's Mind Waves</h1>
 </div>
 <div class="sliderBody">
     <img src="/images/slider-image3.png" class="SlideIMG" alt="SlidingImage">
@@ -38,11 +39,9 @@
     <button class="LEFT-B" onclick="nextIMG(-1)">&#10094;</button>
     <button class="RIGHT-B" onclick="nextIMG(1)">&#10095;</button>
 </div>
-<div class="footerBlock">
-    <a href="https://www.facebook.com" target="blank"><img src="/images/FB-icon.png" /></a>
-    <a href="https://www.twitter.com" target="blank"><img src="/images/TW-icon.png" /></a>
-    <a href="https://www.instagram.com" target="blank"><img src="/images/IG-icon.png" /></a>
-</div>
+
+<Footer/>
+
 @code{
     private void GoToShop()
     {
