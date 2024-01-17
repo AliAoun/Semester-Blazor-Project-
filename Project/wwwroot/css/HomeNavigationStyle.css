@@ -7,11 +7,11 @@
 .Logo {
     float: left;
     margin-left: 200px;
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px; 
 }
 
     .Logo img {
-        width: 80px; /* Adjust the width of the logo as needed */
+        width: 80px; 
         height: auto;
     }
 

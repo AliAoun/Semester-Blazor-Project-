@@ -1,7 +1,7 @@
 ﻿.titleDiv {
     font-family: abel;
     color: black;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -16,9 +16,10 @@
     margin-top: -55px;
     background-color: white;
     color: black;
+    margin-left: 50px;
     width: stretch;
     height: auto;
-    padding: 20px 200px 20px 200px;
+    padding: 10px 100px 10px 100px;
 }
 .ProductDiv {
     float: left;
@@ -81,4 +82,6 @@
     .footerBlock img {
         height: 85px;
         width: auto;
+        
     }
+
